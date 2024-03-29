@@ -14,7 +14,6 @@ public class Organization extends RepresentationModel<Organization> {
     String contactName;
     String contactEmail;
     String contactPhone;
-    
 	public String getId() {
 		return id;
 	}
@@ -45,5 +44,7 @@ public class Organization extends RepresentationModel<Organization> {
 	public void setContactPhone(String contactPhone) {
 		this.contactPhone = contactPhone;
 	}
+    
+    
     
 }

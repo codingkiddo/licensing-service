@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8089
 spring:
     application:
      name: licensing-service 
@@ -10,7 +10,8 @@ spring:
           ribbon:
              enabled: false
        config: 
-           uri: http://configserver:8071
+           #uri: http://configserver:8071
+           uri: http://localhost:8071
            request-connect-timeout: 5000
            request-read-timeout: 5000
            fail-fast: true
@@ -27,5 +28,17 @@ eureka:
       fetchRegistry: true
       serviceUrl: 
          defaultZone:
-            #http://localhost:8070/eureka/
-            http://eurekaserver:8070/eureka/
+            http://localhost:8070/eureka/
+            #http://eurekaserver:8070/eureka/
+
+#management.endpoints.web.base-path=/
+management.endpoints.enabled-by-default: true
+management.endpoint.health:
+  enabled: true
+  show-details: always
+
+logging:
+   level:
+      org.springframework.web: WARN
+      com.optimagrowth: DEBUG
+

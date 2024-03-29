@@ -17,7 +17,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 
 public class ResponseWrapper {
 
-    private Object data;
+	private Object data;
     private Object metadata;
     private List<ErrorMessage> errors;
 
@@ -76,6 +76,10 @@ public class ResponseWrapper {
 	}
 	
 	
+	 @Override
+		public String toString() {
+			return "ResponseWrapper [data=" + data + ", metadata=" + metadata + ", errors=" + errors + "]";
+		}
 
     
    

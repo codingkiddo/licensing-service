@@ -43,7 +43,9 @@ public class ExceptionController extends ResponseEntityExceptionHandler {
 	@ExceptionHandler(value = { Exception.class })
     public @ResponseBody ResponseEntity<ResponseWrapper> handleException(HttpServletRequest request,
             ResponseWrapper responseWrapper){
-    	
+    	System.out.println("&&&&&&&&&&&&&&&&&&&&&&&&&&&& - &&&&&&&&&&&&&&&&&&&&&&&&&&&&");
+    	System.out.println(responseWrapper.toString());
+    	System.out.println("&&&&&&&&&&&&&&&&&&&&&&&&&&&& - &&&&&&&&&&&&&&&&&&&&&&&&&&&&");
         return ResponseEntity.ok(responseWrapper);
     }
     
