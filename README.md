@@ -1,4 +1,47 @@
 
+
+
+sudo curl -L "https://github.com/docker/compose/releases/download/2.27.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+http://192.168.64.101:8080/v1/organization/optimaGrowth/license/013213131
+
+
+curl -u user:963996a7-9d84-4c82-b7eb-acb1b05f1754 http://localhost:8080/actuator/health
+
+curl -u user:963996a7-9d84-4c82-b7eb-acb1b05f1754 http://localhost:8080/v1/organization/optimaGrowth/license/013213131 | jq
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   509    0   509    0     0   4355      0 --:--:-- --:--:-- --:--:--  4387
+{
+  "id": 107,
+  "licenseId": "013213131",
+  "description": "Software product",
+  "organizationId": "optimaGrowth",
+  "productName": "Ostock",
+  "licenseType": "full",
+  "_links": {
+    "self": {
+      "href": "http://localhost:8080/v1/organization/optimaGrowth/license/013213131"
+    },
+    "createLicense": {
+      "href": "http://localhost:8080/v1/organization/optimaGrowth/license"
+    },
+    "updateLicense": {
+      "href": "http://localhost:8080/v1/organization/optimaGrowth/license"
+    },
+    "deleteLicense": {
+      "href": "http://localhost:8080/v1/organization/optimaGrowth/license/013213131"
+    }
+  }
+}
+ubuntu@kubemaster:~$ 
+
+
+
+
+========================================= ========================================= =========================================
+
+
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
 [INFO] Total time:  2.434 s
