@@ -6,16 +6,3 @@ spring:
     cloud:
         config: 
             uri: http://configserver:8071
-            
-  
-management:
-  endpoints:
-    web:
-      exposure:
-        include:
-        - health,info,refresh
-  endpoint:
-    restart:
-      enabled: true
-    refresh:
-      enabled: true
